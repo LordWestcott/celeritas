@@ -107,7 +107,7 @@ func (c *Celeritas) New(rootPath string) error {
 		}
 	} else {
 		c.DB = &Database{
-			DatabaseType: "",
+			DatabaseType: "No Database",
 			Pool:         nil,
 		}
 	}
