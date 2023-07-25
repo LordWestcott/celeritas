@@ -105,6 +105,11 @@ func (c *Celeritas) New(rootPath string) error {
 			DatabaseType: os.Getenv("DATABASE_TYPE"),
 			Pool:         db,
 		}
+	} else {
+		c.DB = &Database{
+			DatabaseType: "",
+			Pool:         nil,
+		}
 	}
 
 	scheduler := cron.New()

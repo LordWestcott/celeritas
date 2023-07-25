@@ -9,7 +9,6 @@ import (
 
 // Loading and saving session on each request.
 func (c *Celeritas) SessionLoad(next http.Handler) http.Handler {
-	c.InfoLog.Println("SessionLoad Called!")
 	return c.Session.LoadAndSave(next)
 }
 
