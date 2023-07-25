@@ -2,3 +2,5 @@
 coverage.out
 dist/*
 cache/testdata/tmp/badger/*
+notes.md
+celeritas
