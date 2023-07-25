@@ -1,0 +1,4 @@
+.idea
+coverage.out
+dist/*
+cache/testdata/tmp/badger/*
